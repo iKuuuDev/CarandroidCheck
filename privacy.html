@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>นโยบายความเป็นส่วนตัว - Carandroid Check</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2196F3; /* สีฟ้าธีมเทคโนโลยี */
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin: 0;
+        }
+
+        h2 {
+            color: #444;
+            font-size: 1.4em;
+            margin-top: 30px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-box {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 20px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>นโยบายความเป็นส่วนตัว</h1>
+            <p><strong>แอปพลิเคชัน:</strong> Carandroid Check</p>
+            <p><strong>ปรับปรุงล่าสุดเมื่อ:</strong> <span id="current-date">24 ธันวาคม 2025</span></p>
+        </header>
+
+        <main>
+            <p>ขอขอบคุณที่ใช้งานแอปพลิเคชัน <strong>Carandroid Check</strong> ("แอปพลิเคชัน") ซึ่งพัฒนาโดย [ชื่อของคุณ หรือ ชื่อทีมพัฒนา] ("เรา") เราให้ความสำคัญกับความเป็นส่วนตัวของคุณ และมุ่งมั่นที่จะโปร่งใสเกี่ยวกับข้อมูลที่เราเข้าถึงเพื่อการตรวจสอบสเปคเครื่องเสียงรถยนต์ระบบ Android</p>
+
+            <h2>1. ข้อมูลที่เราเก็บรวบรวมและเข้าถึง</h2>
+            <p>เพื่อให้แอปพลิเคชันสามารถทำงานได้ตามวัตถุประสงค์ในการ "ตรวจสอบสเปคที่แท้จริง" ของอุปกรณ์ แอปพลิเคชันจำเป็นต้องเข้าถึงข้อมูลเชิงเทคนิคของอุปกรณ์ (Device Information) ดังนี้:</p>
+            
+            <h3>1.1 ข้อมูลฮาร์ดแวร์และระบบ (Hardware & System Info)</h3>
+            <p>แอปพลิเคชันจะทำการอ่านค่าจากระบบเพื่อแสดงผลข้อมูลที่แท้จริง ได้แก่:</p>
+            <ul>
+                <li><strong>CPU:</strong> รุ่นของหน่วยประมวลผล, จำนวน Core, และความเร็ว (Clock Speed)</li>
+                <li><strong>Memory (RAM/ROM):</strong> พื้นที่จัดเก็บข้อมูลจริง และหน่วยความจำชั่วคราว (RAM) เพื่อตรวจสอบว่าตรงกับที่โฆษณาหรือไม่</li>
+                <li><strong>Display:</strong> ความละเอียดหน้าจอ (Resolution) และค่า DPI</li>
+                <li><strong>Android Version:</strong> เวอร์ชันของระบบปฏิบัติการและระดับ API Level</li>
+            </ul>
+            <p><em>* ข้อมูลเหล่านี้ถูกใช้เพื่อการแสดงผลบนหน้าจอแอปพลิเคชันเท่านั้น เราไม่ได้ส่งข้อมูลเหล่านี้ออกไปยังเซิร์ฟเวอร์ภายนอกเพื่อเก็บรวบรวมระบุตัวตนของคุณ</em></p>
+
+            <h3>1.2 สิทธิ์การเข้าถึง (Permissions)</h3>
+            <p>แอปพลิเคชันอาจขอสิทธิ์บางประการเพื่อให้ทำงานได้สมบูรณ์:</p>
+            <ul>
+                <li><strong>READ_PHONE_STATE (ทางเลือก):</strong> ในอุปกรณ์บางรุ่น อาจจำเป็นต้องใช้เพื่ออ่านข้อมูล Serial Number ของบอร์ดเพื่อยืนยันรุ่นอุปกรณ์ (เราไม่เก็บเบอร์โทรศัพท์หรือข้อมูลการโทร)</li>
+            </ul>
+
+            <h2>2. การใช้งานข้อมูล</h2>
+            <p>เราใช้ข้อมูลที่เข้าถึงเพื่อจุดประสงค์เดียวคือ: <strong>การวิเคราะห์และรายงานสเปคที่ถูกต้องของอุปกรณ์ให้ผู้ใช้งานทราบ</strong> เพื่อป้องกันการถูกหลอกลวงจากการปลอมแปลงข้อมูลสเปคเครื่อง (Fake Specs) บนจอ Android</p>
+
+            <h2>3. การเปิดเผยข้อมูลแก่บุคคลภายนอก</h2>
+            <p>เรา<strong>ไม่</strong>ทำการจำหน่าย, แลกเปลี่ยน, หรือถ่ายโอนข้อมูลส่วนบุคคลของคุณไปยังบุคคลภายนอก</p>
+            <p>อย่างไรก็ตาม แอปพลิเคชันอาจมีการใช้งานบริการของบุคคลที่สาม (Third-party services) เช่น <strong>Google Play Services</strong> หรือ <strong>Google AdMob</strong> (กรณีมีโฆษณา) ซึ่งอาจเก็บรวบรวมข้อมูลระบุตัวตนอุปกรณ์เพื่อการวิเคราะห์ประสิทธิภาพแอปหรือแสดงโฆษณาที่เหมาะสม</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank">นโยบายความเป็นส่วนตัวของ Google Play Services</a></li>
+            </ul>
+
+            <h2>4. ความปลอดภัยของข้อมูล</h2>
+            <p>เนื่องจากแอปพลิเคชันทำงานแบบ Offline เป็นหลักในการตรวจสอบสเปค ข้อมูลส่วนใหญ่จะถูกประมวลผลภายในเครื่องของคุณ (Local Processing) และไม่ได้ถูกส่งผ่านเครือข่ายอินเทอร์เน็ตโดยไม่จำเป็น</p>
+
+            <h2>5. การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว</h2>
+            <p>เราอาจปรับปรุงนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว การเปลี่ยนแปลงใดๆ จะถูกโพสต์ลงในหน้านี้ เราขอแนะนำให้คุณตรวจสอบหน้านี้เป็นระยะๆ</p>
+
+            <h2>6. ติดต่อเรา</h2>
+            <p>หากคุณมีข้อสงสัยหรือข้อเสนอแนะเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ หรือพบปัญหาในการใช้งาน สามารถติดต่อเราได้ที่:</p>
+            
+            <div class="contact-box">
+                <strong>อีเมล:</strong> [ใส่อีเมลของคุณที่นี่ เช่น support@example.com]<br>
+                <strong>เว็บไซต์:</strong> [ใส่เว็บไซต์ของคุณ ถ้ามี]
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2025 Carandroid Check. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
